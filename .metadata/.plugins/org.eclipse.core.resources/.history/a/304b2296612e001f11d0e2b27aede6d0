@@ -1,0 +1,21 @@
+package br.com.cod3r.financeiro;
+
+import java.lang.reflect.Field;
+
+import br.com.coder3.app.calculo.Calculadora;
+
+public class Teste {
+public static void main(String[] args) {
+	Calculadora cal = new Calculadora();
+	System.out.print(Calculadora.class.getDeclaredFields()[0].getName());
+	
+	try {
+		Field fieldId = Calculadora.class.getDeclaredFields()[0].getName();
+		
+	}catch(Exception e) {
+		e.getStackTrace();
+	}
+	
+}
+}
+ 

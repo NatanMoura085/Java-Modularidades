@@ -1,0 +1,10 @@
+package br.com.cod3r.financeiro;
+
+import br.com.coder3.app.calculo.Calculadora;
+
+public class Teste {
+public static void main(String[] args) {
+	Calculadora cal = new Calculadora();
+	System.out.print(cal.soma(2,2));
+}
+}

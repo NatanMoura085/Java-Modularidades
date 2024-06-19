@@ -1,0 +1,9 @@
+ module app.calculo {
+	requires transitive app.logging;
+	exports br.com.coder3.app.calculo;
+	exports br.com.coder3.app.calculo.interno to app.financeiro ;
+	
+	opens br.com.coder3.app.calculo;
+	
+	
+}

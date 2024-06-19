@@ -1,0 +1,4 @@
+module app.calculo {
+	requires app.logging;
+	exports br.com.coder3.app.calculo;
+}

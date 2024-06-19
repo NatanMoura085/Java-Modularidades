@@ -1,0 +1,27 @@
+package br.com.cod3r.financeiro;
+
+import java.lang.reflect.Field;
+
+import br.com.coder3.app.calculo.CalculadoraImpl;
+
+public class Teste {
+public static void main(String[] args) {
+	CalculadoraImpl cal = new CalculadoraImpl();
+	//System.out.print(Calculadora.class.getDeclaredFields()[0].getName());
+	
+	try {
+		Field fieldId = CalculadoraImpl.class.getDeclaredFields()[0];
+		fieldId.setAccessible(true);
+		fieldId.set(cal, "adc");
+		System.out.print(cal.getId());
+		fieldId.setAccessible(false);
+	}catch(Exception e) {
+		e.getStackTrace();
+	}
+	
+	
+	 
+	
+}
+}
+ 
